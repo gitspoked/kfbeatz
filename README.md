@@ -2,7 +2,11 @@
 
 > A self-contained, offline-capable beat-making studio that lives in a **single HTML file**.
 
-K·F BEATZ is the **BeatForge** engine: a browser-based groove box for sketching beats — synth voices, drums, sample chopping, layered patterns, MIDI import, and WAV bounce — with **no React, no Tailwind, and no build step**. Open the file and play.
+**▶ [Try it live](https://gitspoked.github.io/kfbeatz/)** — no install, runs in your browser.
+
+K·F BEATZ is a **beat engine**: a browser-based groove box for sketching beats — synth voices, drums, sample chopping, layered patterns, MIDI import, and WAV bounce — with **no external program needed, just a browser**. Open the file and play.
+
+![K·F BEATZ — synth keyboard and drum pads](assets/screenshot.png)
 
 ## ✨ Features
 
@@ -31,11 +35,9 @@ open KF_BEATZ.html        # macOS
 ```
 
 ### Option B — live demo (GitHub Pages)
-Once this repo is pushed and Pages is enabled, the app is served at:
+The app is hosted and ready to play, no clone required:
 
-> `https://<your-username>.github.io/kfbeatz/`
-
-(The included `index.html` redirects to `KF_BEATZ.html` so the Pages root works.)
+> **<https://gitspoked.github.io/kfbeatz/>**
 
 ## 🎛️ Usage
 
@@ -45,12 +47,26 @@ Once this repo is pushed and Pages is enabled, the app is served at:
 4. Tweak filters/effects per voice.
 5. Hit **bounce** to render your arrangement to a downloadable `.wav`.
 
+### ⌨️ Keyboard shortcuts
+
+| Keys | Action |
+|------|--------|
+| `Space` | Play / stop the transport |
+| `A W S E D F T G Y H U J K O L P ;` | Play synth notes (piano layout, C3 → E4) |
+| `1` `2` `3` `4` | Drum pads — kick, snare, hi-hat, clap |
+| `5` `6` `7` `8` | Drum pads — tom, cymbal, perc, fx |
+
+> Shortcuts are ignored while typing in an input field, so they won't interfere with text entry.
+
 ## 🧱 Project structure
 
 ```
 kfbeatz/
 ├── KF_BEATZ.html     # the entire application (HTML + CSS + JS, self-contained)
-├── index.html        # redirect to KF_BEATZ.html (for GitHub Pages root)
+├── index.html        # redirect + social meta tags (for GitHub Pages root)
+├── assets/
+│   ├── screenshot.png  # README hero
+│   └── og.png          # social link-preview card
 ├── README.md
 ├── LICENSE-MIT
 └── LICENSE-APACHE
